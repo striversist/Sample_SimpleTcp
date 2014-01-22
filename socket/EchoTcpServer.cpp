@@ -51,7 +51,7 @@ void EchoTcpServer::start()
         }
 
         const int BUFFERSIZE = 1024;
-        char buffer[BUFFERSIZE];
+        char buffer[BUFFERSIZE] = {0};
         int recvMsgSize = 0;
 
         printf("server begin recv\n");
