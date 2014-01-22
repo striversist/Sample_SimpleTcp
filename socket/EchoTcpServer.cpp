@@ -50,7 +50,7 @@ void EchoTcpServer::start()
             printf("Client(IP: %s) connected.\n", inet_ntoa(client_addr.sin_addr));
         }
 
-        const int BUFFERSIZE = 32;
+        const int BUFFERSIZE = 1024;
         char buffer[BUFFERSIZE];
         int recvMsgSize = 0;
 
